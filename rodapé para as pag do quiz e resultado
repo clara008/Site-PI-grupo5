@@ -1,0 +1,19 @@
+<footer class="rodapé">
+        <div class="logo">
+            <img src="logo nosssa.jpg" alt="logo">
+        </div>
+        <div class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#equipe">Equipe</a>
+        </div>
+        <div class="contato">
+            <p>Contatos:</p>
+            <div class="social">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <img src="if ceara.jpg" alt="Instituto Federal Catarinense - Campus Concórdia" height="50">
+        </div>
+    </footer>
