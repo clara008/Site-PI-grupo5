@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #3e5a5c;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .correct {
+            background-color: #a3e4a3; /* Verde claro */
+        }
+        .incorrect {
+            background-color: #e4a3a3; /* Vermelho claro */
+        }
+        .btn {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Resultados</h2>
+        <p id="pontuacao"></p>
+        <div id="respostas"></div>
+        <button class="btn" onclick="window.location.href='quiz2.html'">Voltar</button>
+        <button class="btn" onclick="window.location.href='videos.html'">Seguinte</button>
+    </div>
+    <script src="resultado.js"></script>
+</body>
+</html>
