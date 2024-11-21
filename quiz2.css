@@ -1,0 +1,96 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf3f3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #344749;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Títulos */
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #fff
+}
+
+/* Perguntas e opções */
+.question {
+    margin-bottom: 30px;
+    color: black
+}
+
+.options label {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #c7dcdc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options label:hover {
+    background-color: #a7bebe;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Botões */
+#navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #808E8F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005757;
+}
+
+#submit {
+    background-color: #004040;
+}
+
+#submit:hover {
+    background-color: #002f2f;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ccc;
+}
