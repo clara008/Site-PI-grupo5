@@ -1,3 +1,10 @@
+.lexend-exa-uniquifier {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 /* Reset de margens e fontes */
 body, ul, li {
     margin: 0;
@@ -7,7 +14,7 @@ body, ul, li {
 }
 
 body {
-    font-family:'Raleway', sans-serif;
+    font-family:"Lexend Exa", sans-serif;
 }
 
 .navbar {
