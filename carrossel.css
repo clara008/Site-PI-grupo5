@@ -1,4 +1,12 @@
+.lexend-exa-uniquifier {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 body{
+    font-family: "Lexend Exa", sans-serif;
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -44,8 +52,8 @@ h1{
     background-color:transparent;
     border: none;
     font-size: xxx-large;
-    font-family: monospace;
-    font-weight: bold;
+/*  font-family: monospace;  */
+    font-weight: bold; 
     left: 500px;
 }
 #next{
