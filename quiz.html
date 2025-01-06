@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../imagens/logoheader.png">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Videoaulas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Quiz</h2>
+        <p>Teste o seu conhecimento em gramática e ortografia com essas perguntas.</p>
+
+        <!-- Perguntas -->
+        <div class="question" id="q1">
+            <h3>Pergunta 1</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="0"> graxa</label>
+                <label><input type="radio" name="q1" value="0"> veia</label>
+                <label><input type="radio" name="q1" value="1"> marcio</label>
+                <label><input type="radio" name="q1" value="0"> marcelo</label>
+            </div>
+        </div>
+
+        <div class="question" id="q2" style="display: none;">
+            <h3>Pergunta 2</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0"> graxa</label>
+                <label><input type="radio" name="q2" value="0"> veia</label>
+                <label><input type="radio" name="q2" value="0"> marcio</label>
+                <label><input type="radio" name="q2" value="1"> marcelo</label>
+            </div>
+        </div>
+
+        <div class="question" id="q3" style="display: none;">
+            <h3>Pergunta 3</h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="1"> graxa</label>
+                <label><input type="radio" name="q3" value="0"> veia</label>
+                <label><input type="radio" name="q3" value="0"> marcio</label>
+                <label><input type="radio" name="q3" value="0"> marcelo</label>
+            </div>
+        </div>
+
+        <div class="question" id="q4" style="display: none;">
+            <h3>Pergunta 4</h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="0"> graxa</label>
+                <label><input type="radio" name="q4" value="1"> veia</label>
+                <label><input type="radio" name="q4" value="0"> marcio</label>
+                <label><input type="radio" name="q4" value="0"> marcelo</label>
+            </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <div id="navigation">
+            <button class="btn" id="prev" onclick="navegarPerguntas(-1)" style="display: none;">Anterior</button>
+            <button class="btn" id="next" onclick="navegarPerguntas(1)">Próxima</button>
+            <button class="btn" id="submit" onclick="enviarRespostas()" style="display: none;">Enviar</button>
+        </div>
+    </div>
+
+    <script src="quiz2.js"></script>
+    <footer class="rodapé">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo">
+        </div>
+        <div class="texto">
+            <p class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Quiz</a>
+                <a href="#equipe">Videoaulas</a>
+                <p class="grupo">PI 1 - Grupo 5</p>
+<!-- depois tem que colocar os links pro git, email e insta -->
+
+            </p>
+        </div>
+        <div class="contato">
+            <div class="social">
+                <div><img src="imagens/logogit.png" alt="git"></div>
+                <div><img src="imagens/image.png" alt="gmail"></div>
+                <div><img src="imagens/insta.png" alt="insta" ></div>
+            </div>
+<!-- depois tem que colocar os links pro git, email e insta -->
+            <img src="imagens/logoifc.png" alt="Instituto Federal Catarinense - Campus Concórdia" class="logoifc">
+        </div>
+    </footer>
+
+</body>
+</html>
