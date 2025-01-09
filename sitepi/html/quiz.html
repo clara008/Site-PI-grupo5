@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/stylequiz.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../imagens/logo.png">
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="../html/videoaulaPI.html">Videoaulas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Quiz</h2>
+        <p>Teste o seu conhecimento em gramática e ortografia com essas perguntas.</p>
+
+        <!-- Perguntas -->
+        <div class="question" id="q1">
+            <h3>1 - Em qual frase o uso da crase está correto?</h3>
+            <div class="options">
+                <label><input type="radio" name="q1" value="1">Ele foi à festa com seus amigos</label>
+                <label><input type="radio" name="q1" value="0">Vou entregar o relatório à tarde de hoje</label>
+                <label><input type="radio" name="q1" value="0">A professora explicará à todos alunos</label>
+                <label><input type="radio" name="q1" value="0">Estarei disponível à partir das 10h</label>
+            </div>
+        </div>
+
+        <div class="question" id="q2" style="display: none;">
+            <h3>2 - Qual alternativa está seguindo as regras de acentuação?</h3>
+            <div class="options">
+                <label><input type="radio" name="q2" value="0">Feiúra, Enjôo, Pôr</label>
+                <label><input type="radio" name="q2" value="0">Feiura, Enjôo, Por</label>
+                <label><input type="radio" name="q2" value="1">Feiúra, Enjoo, Por</label>
+                <label><input type="radio" name="q2" value="0">Feiura, Enjoo, Pôr</label>
+            </div>
+        </div>
+
+        <div class="question" id="q3" style="display: none;">
+            <h3>3 - Qual frase apresenta o verbo conjugado corretamente no futuro do presente?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q3" value="1">Quando você vir o João, diga a ele que chegarei amanhã.</label>
+                <label><input type="radio" name="q3" value="0">Quando você ver o João, diga a ele que chego amanhã</label>
+                <label><input type="radio" name="q3" value="0">Quando você vir o João, diga a ele que chegarei hoje</label>
+                <label><input type="radio" name="q3" value="0"> Quando você ver o João, diga a ele que chega amanhã.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q4" style="display: none;">
+            <h3>4 - Qual alternativa faz o uso correto de palavras homônimas?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q4" value="0">Aquela comida estava mal preparada e me fez mau.
+                </label>
+                <label><input type="radio" name="q4" value="1">Ele não sabia o mal que aquilo faria.
+                </label>
+                <label><input type="radio" name="q4" value="0">O mau aluno recebeu elogios por sua dedicação.
+                </label>
+                <label><input type="radio" name="q4" value="0">Estava tudo mau naquele dia chuvoso</label>
+            </div>
+        </div>
+
+        <div class="question" id="q5" style="display: none;">
+            <h3>5 - Qual palavra é um parônimo da palavra "descrição"? </h3>
+            <div class="options">
+                <label><input type="radio" name="q5" value="0">Destino
+                </label>
+                <label><input type="radio" name="q5" value="0">Decisão
+                </label>
+                <label><input type="radio" name="q5" value="1">Discrição
+                </label>
+                <label><input type="radio" name="q5" value="0">Distração</label>
+            </div>
+        </div>
+
+        <div class="question" id="q6" style="display: none;">
+            <h3>6 -  Qual frase apresenta o verbo destacado modo subjuntivo?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q6" value="1">Se ele fizer isso, todos ficarão felizes.
+                </label>
+                <label><input type="radio" name="q6" value="0">Quando ele faz isso, todos ficam felizes.
+                </label>
+                <label><input type="radio" name="q6" value="0">Ele fez isso com frequência no passado.
+                </label>
+                <label><input type="radio" name="q6" value="0">Se ele fez isso, foi sem querer</label>
+            </div>
+        </div>
+
+        <div class="question" id="q7" style="display: none;">
+            <h3>7 - Qual frase faz o uso correto dos homônimos censo e senso?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q7" value="0">É preciso ter muita censura para lidar com essa situação.
+                </label>
+                <label><input type="radio" name="q7" value="1">O censo revelou dados importantes sobre a população.
+                </label>
+                <label><input type="radio" name="q7" value="0"> Ele declarou muito censo crítico em sua decisão.
+                </label>
+                <label><input type="radio" name="q7" value="0">Esse é o melhor senso de humor que já ouvi.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q8" style="display: none;">
+            <h3>8 - Em qual alternativa o uso da crase está correto?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q8" value="1">Vou à casa da minha tia amanhã.
+                </label>
+                <label><input type="radio" name="q8" value="0">Vou a escola procurar meu irmão.
+                </label>
+                <label><input type="radio" name="q8" value="0">Enviarei o presente para ele no próximo mês.
+                </label>
+                <label><input type="radio" name="q8" value="0">Quero estar à disposição para ajudar sempre</label>
+            </div>
+        </div>
+
+        <div class="question" id="q9" style="display: none;">
+            <h3>9 - Qual alternativa contém somente palavras oxítonas ?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q9" value="0">Fácil, Tórax, Caminhão
+                </label>
+                <label><input type="radio" name="q9" value="0">Lâmpada, Azulejo, Brasil
+                </label>
+                <label><input type="radio" name="q9" value="0">Útil, Coração, Cavalo
+                </label>
+                <label><input type="radio" name="q9" value="1">Café, Maracujá, Baú</label>
+            </div>
+        </div>
+
+        <div class="question" id="q10" style="display: none;">
+            <h3>10 - Por que a palavra "lâmpada" é acentuada?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q10" value="0">É uma oxítona terminada em "a".
+                </label>
+                <label><input type="radio" name="q10" value="0">É uma paroxítona terminada em "a".
+                </label>
+                <label><input type="radio" name="q10" value="1">É uma proparoxítona.
+                </label>
+                <label><input type="radio" name="q10" value="0">Não deveria ser acentuado.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q11" style="display: none;">
+            <h3>11 - Sobre o uso de "mas" e "mais", qual alternativa está completamente correta?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q11" value="0">Ele queria ajudar, mais não sabia como.
+                </label>
+                <label><input type="radio" name="q11" value="0">Ele estudou muito, mas ainda nao passou na prova
+                </label>
+                <label><input type="radio" name="q11" value="0">Vou comprar mais frutas para a sobremesa.
+                </label>
+                <label><input type="radio" name="q11" value="1"> Apenas as alternativas B e C estão corretas.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q12" style="display: none;">
+            <h3>12 - Qual das frases abaixo apresenta um erro relacionado ao uso dos porquês?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q12" value="0">Você sabe o porquê disso tudo?
+                </label>
+                <label><input type="radio" name="q12" value="0">Ele não veio porque estava cansado.
+                </label>
+                <label><input type="radio" name="q12" value="1">Não entendi o motivo por quê ele agiu assim.
+                </label>
+                <label><input type="radio" name="q12" value="0"> Por que você ainda não terminou a tarefa?.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q13" style="display: none;">
+            <h3>13 - Sobre o uso de homônimos, escolha a alternativa correta
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q13" value="0">O verbo acender está relacionado a iluminar, enquanto ascender significa subir.
+                </label>
+                <label><input type="radio" name="q13" value="0">Sessão refere-se a um período de tempo e seção a uma divisão.
+                </label>
+                <label><input type="radio" name="q13" value="0">Censo refere-se a um levantamento de dados e senso ao juízo.
+                </label>
+                <label><input type="radio" name="q13" value="1">Todas as alternativas estão corretas.</label>
+            </div>
+        </div>
+
+        <div class="question" id="q14" style="display: none;">
+            <h3>14 - Sobre o uso de "há" e "a", qual alternativa está correta?
+                </h3>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="1">Ele foi viajar há dois dias
+                    </label>
+                    <label><input type="radio" name="q14" value="0">Estarei lá há uma hora
+                    </label>
+                    <label><input type="radio" name="q14" value="0">O show vai começar há poucos minutos
+                    </label>
+                    <label><input type="radio" name="q14" value="0">Não o vejo a muitos anos</label>
+                </div>
+            </div>
+
+        <div class="question" id="q15" style="display: none;">
+            <h3>15 - Sobre a nova ortografia, qual das palavras está INCORRETA segundo o Acordo Ortográfico?
+            </h3>
+            <div class="options">
+                <label><input type="radio" name="q15" value="0"> Antissocial
+                </label>
+                <label><input type="radio" name="q15" value="0">Hifen
+                </label>
+                <label><input type="radio" name="q15" value="1">Auto-escola
+                </label>
+                <label><input type="radio" name="q15" value="0">Micro-ondas</label>
+            </div>
+        </div>
+
+
+        <!-- Botões de navegação -->
+        <div id="navigation">
+            <button class="btn" id="prev" onclick="navegarPerguntas(-1)" style="display: none;">Anterior</button>
+            <button class="btn" id="next" onclick="navegarPerguntas(1)">Próxima</button>
+            <button class="btn" id="submit" onclick="enviarRespostas()" style="display: none;">Enviar</button>
+        </div>
+    </div>
+
+    <script src="../javascpt/quizz.js"></script>
+    <footer class="rodapé">
+        <div class="logo">
+            <img src="../imagens/logo.png" alt="logo">
+        </div>
+        <div class="texto">
+            <p class="menu">
+                <a href="../index.html">Início</a>
+                <a href="#">Quiz</a>
+                <a href="../html/videoaulaPI.html">Videoaulas</a>
+                <p class="grupo">PI 1 - Grupo 5</p>
+<!-- depois tem que colocar os links pro git, email e insta -->
+
+            </p>
+        </div>
+        <div class="contato">
+            <div class="social">
+               <a href="https://github.com/gramaticando" target="_blank"><img src="../imagens/github.jpg" alt="git"></a>
+                <a href="https://mail.google.com/mail/u/5/?ogbl#inbox" target="_blank"><img src="../imagens/email.png" alt="gmail"></a>
+                <a href="https://www.instagram.com/gramaticandoifc?igsh=MXBnaGhtNHBrdTZ3dg==" target="_blank"><img src="../imagens/insta.png" alt="insta" ></a>
+            </div>
+<!-- depois tem que colocar os links pro git, email e insta -->
+<a href="https://concordia.ifc.edu.br/" target="_blank"><img src="../imagens/logo.if.png" alt="Instituto Federal Catarinense - Campus Concórdia" class="logoifc"></a>
+        </div>
+    </footer>
+</body>
+</html>
