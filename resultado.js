@@ -1,29 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const respostas = JSON.parse(sessionStorage.getItem('respostas'));
-    const respostasCorretas = [0, 1, 2, 3, 0]; // Defina as respostas corretas aqui
-    let pontuacao = 0;
+// Recupera o número de acertos do localStorage
+const acertos = localStorage.getItem("quizAcertos");
 
-    const respostasDiv = document.getElementById('respostas');
+const totalPerguntas = 15;
 
-    respostas.forEach((resposta, index) => {
-        const div = document.createElement('div');
-        div.classList.add('question');
 
-        if (resposta == respostasCorretas[index]) {
-            div.classList.add('correct');
-            pontuacao++;
-        } else {
-            div.classList.add('incorrect');
-        }
+// Elementos do DOM
+const pontuacaoElemento = document.getElementById("pontuacao");
+const respostasElemento = document.getElementById("respostas");
 
-        div.innerHTML = `
-            <h3>Pergunta ${index + 1}</h3>
-            <p>Sua resposta: ${resposta !== null ? 'Opção ' + (parseInt(resposta) + 1) : 'Nenhuma resposta'}</p>
-            <p>Resposta correta: Opção ${respostasCorretas[index] + 1}</p>
-        `;
+// Exibe a pontuação do usuário
+if (acertos !== null) {
+    pontuacaoElemento.textContent = `Você acertou ${acertos} de ${totalPerguntas} perguntas.`;
+} else {
+    pontuacaoElemento.textContent = "Nenhum resultado encontrado. Faça o quiz novamente.";
+}
 
-        respostasDiv.appendChild(div);
+// Cria e exibe a lista de respostas corretas
+if (respostasCorretas.length > 0) {
+    const lista = document.createElement("ul");
+    respostasCorretas.forEach((resposta, index) => {
+        const item = document.createElement("li");
+        item.textContent = `Pergunta ${index + 1}: ${resposta}`;
+        lista.appendChild(item);
     });
-
-    document.getElementById('pontuacao').innerText = `Pontuação: ${pontuacao}/${respostas.length}`;
-});
+    respostasElemento.appendChild(lista);
+} else {
+    respostasElemento.textContent = "Nenhuma resposta correta disponível.";
+}
